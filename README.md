@@ -22,4 +22,4 @@ just put these in your path.
 * `perl-rename` - https://stackoverflow.com/a/22578623
 * `deno` - https://deno.com/
 * `tidy` aka 'HTML Tidy': https://www.html-tidy.org/
-
+* `task` aka 'Taskfile': https://taskfile.dev/
