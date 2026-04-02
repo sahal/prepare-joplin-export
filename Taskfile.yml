@@ -1,6 +1,5 @@
 version: '3'
 
-# todo: update ts to accept filename of joplin export
 env:
   TASK_FILE: './example/Joplin export.html'
 

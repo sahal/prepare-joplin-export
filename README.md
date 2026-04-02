@@ -12,11 +12,12 @@ think?
 
 ## Use
 
-See `Taskfile.yml` or run `task`
+See `Taskfile.yml` or run `task`.
 
 ## Required
 
-Go ask your OS docs (pls not an AI) how to install the following, or just put these in your path.
+Go ask your OS docs (pls not an AI) how to install the following, or
+just put these in your path.
 
 * `perl-rename` - https://stackoverflow.com/a/22578623
 * `deno` - https://deno.com/
