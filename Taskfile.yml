@@ -4,6 +4,7 @@ env:
   TASK_FILE: './example/Joplin export.html'
 
 tasks:
+  # todo: this is actually not 'modify'ing the file - just outputing the results
   modify:
     desc: Remove and add elements to document
     dotenv: ['.env', '{{.ENV}}/.env', '{{.HOME}}/.env']
