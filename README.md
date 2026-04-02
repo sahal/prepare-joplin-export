@@ -14,6 +14,8 @@ think?
 
 See `Taskfile.yml` or run `task`.
 
+This is mostly an excuse for me to learn some JS/TS via `deno`. RIP
+
 ## Required
 
 Go ask your OS docs (pls not an AI) how to install the following, or
