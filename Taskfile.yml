@@ -1,0 +1,25 @@
+version: '3'
+
+# todo: update ts to accept filename of joplin export
+env:
+  TASK_FILE: './example/Joplin export.html'
+
+tasks:
+  modify:
+    desc: Remove and add elements to document
+    dotenv: ['.env', '{{.ENV}}/.env', '{{.HOME}}/.env']
+    cmds:
+      - deno run --allow-env --allow-read modifyDocument.ts
+
+  rename:
+    desc: Rename file using perl-rename
+    dotenv: ['.env', '{{.ENV}}/.env', '{{.HOME}}/.env']
+    cmds:
+      - perl-rename --interactive 'y/[A-Z]/[a-z]/;s/\ /-/g' "${TASK_FILE}"
+
+  tidy:
+    desc: Run HTML tidy on file
+    dotenv: ['.env', '{{.ENV}}/.env', '{{.HOME}}/.env']
+    cmds:
+      - tidy -i -m "${TASK_FILE}"
+
